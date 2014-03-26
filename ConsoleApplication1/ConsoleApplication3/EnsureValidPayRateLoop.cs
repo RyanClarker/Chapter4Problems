@@ -15,13 +15,10 @@ namespace ConsoleApplication3
             {
                 Console.WriteLine("Enter hourly payrate: ");
                 string input = Console.ReadLine();
+
                 n = Convert.ToDouble(input);
-                if (n <= 5.65d || n >= 49.99)
-                {
-                    Console.WriteLine("Enter hourly payrate: ");
-                    input = Console.ReadLine();
-                }
-                else
+
+                if (n >= 5.65d && n <= 49.99)
                 {
                     break;
                 }
